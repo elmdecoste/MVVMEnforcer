@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D41EB9F02215DE1E009E0C50 /* MVVMEnforcer.h in Headers */ = {isa = PBXBuildFile; fileRef = D41EB9EE2215DE1E009E0C50 /* MVVMEnforcer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D41EB9F72215DE57009E0C50 /* EnforcedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41EB9F62215DE57009E0C50 /* EnforcedView.swift */; };
+		D41EB9F92215DF92009E0C50 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41EB9F82215DF92009E0C50 /* ViewModel.swift */; };
+		D41EB9FB2215E000009E0C50 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41EB9FA2215E000009E0C50 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D41EB9EB2215DE1E009E0C50 /* MVVMEnforcer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVVMEnforcer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41EB9EE2215DE1E009E0C50 /* MVVMEnforcer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMEnforcer.h; sourceTree = "<group>"; };
 		D41EB9EF2215DE1E009E0C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41EB9F62215DE57009E0C50 /* EnforcedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnforcedView.swift; sourceTree = "<group>"; };
+		D41EB9F82215DF92009E0C50 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D41EB9FA2215E000009E0C50 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				D41EB9EE2215DE1E009E0C50 /* MVVMEnforcer.h */,
 				D41EB9EF2215DE1E009E0C50 /* Info.plist */,
+				D41EB9F62215DE57009E0C50 /* EnforcedView.swift */,
+				D41EB9F82215DF92009E0C50 /* ViewModel.swift */,
+				D41EB9FA2215E000009E0C50 /* DataModel.swift */,
 			);
 			path = MVVMEnforcer;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					D41EB9EA2215DE1D009E0C50 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41EB9F92215DF92009E0C50 /* ViewModel.swift in Sources */,
+				D41EB9F72215DE57009E0C50 /* EnforcedView.swift in Sources */,
+				D41EB9FB2215E000009E0C50 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		D41EB9F42215DE1E009E0C50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.elmd.MVVMEnforcer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +301,7 @@
 		D41EB9F52215DE1E009E0C50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
