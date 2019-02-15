@@ -10,12 +10,12 @@ import Foundation
 
 public protocol ViewModel {
     
-    associatedtype DataModel
+    associatedtype Data: DataModel
     associatedtype View: EnforcedView
     
-    var dataModel: DataModel { get set }
+    var dataModel: Data { get set }
     
     func configure(view: View)
     
-    init(withData data: DataModel)
+    init(withData data: Data)
 }

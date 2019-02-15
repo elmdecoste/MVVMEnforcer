@@ -45,6 +45,8 @@
 		D41EBA202215E24F009E0C50 /* TestableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableView.swift; sourceTree = "<group>"; };
 		D41EBA222215E259009E0C50 /* TestableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableViewModel.swift; sourceTree = "<group>"; };
 		D41EBA242215E261009E0C50 /* TestableDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableDataModel.swift; sourceTree = "<group>"; };
+		D41EBA272217262B009E0C50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D41EBA282217265E009E0C50 /* MVVMEnforcer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = MVVMEnforcer.podspec; path = ../MVVMEnforcer.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,8 @@
 		D41EB9FC2215E1EC009E0C50 = {
 			isa = PBXGroup;
 			children = (
+				D41EBA282217265E009E0C50 /* MVVMEnforcer.podspec */,
+				D41EBA272217262B009E0C50 /* README.md */,
 				D41EBA1A2215E216009E0C50 /* MVVMEnforcer.framework */,
 				D41EBA072215E1EC009E0C50 /* MVVMEnforcerExample */,
 				D41EBA062215E1EC009E0C50 /* Products */,

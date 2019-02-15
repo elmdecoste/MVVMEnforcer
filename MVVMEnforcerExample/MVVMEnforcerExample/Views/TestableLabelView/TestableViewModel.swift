@@ -10,17 +10,17 @@ import Foundation
 import MVVMEnforcer
 
 protocol TestableViewModel: ViewModel {
-    
+    // View model contract
 }
 
 class DefaultTestableViewModel: TestableViewModel {
     
-    typealias DataModel = TestableDataModel
+    typealias Data = TestableDataModel
     typealias View = TestableView<DefaultTestableViewModel>
     
-    var dataModel: DataModel
+    var dataModel: Data
     
-    required init(withData data: DataModel) {
+    required init(withData data: Data) {
         self.dataModel = data
     }
     

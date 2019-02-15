@@ -1,3 +1,0 @@
-# MVVMEnforcer
-
-A lightweight framework that type enforces the MVVM architecture. When you conform a view to the `EnforcedView` type, you will be required to implement a ViewModel and DataModel for your type
